@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Project</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background-color:#f4f4f4;
+            padding:30px;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .container{
+
+            display:grid;
+
+            grid-template-columns:
+            repeat(auto-fit,minmax(200px,1fr));
+
+            gap:20px;
+        }
+
+        .card{
+
+            background:white;
+
+            padding:20px;
+
+            border-radius:8px;
+
+            text-align:center;
+
+            box-shadow:0 0 5px lightgray;
+
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Grid Layout</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Structure of web pages.</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Styling and design.</p>
+        </div>
+
+        <div class="card">
+            <h2>Java</h2>
+            <p>Programming language.</p>
+        </div>
+
+        <div class="card">
+            <h2>Python</h2>
+            <p>Used in AI and automation.</p>
+        </div>
+
+        <div class="card">
+            <h2>GitHub</h2>
+            <p>Code hosting platform.</p>
+        </div>
+
+        <div class="card">
+            <h2>VS Code</h2>
+            <p>Code editor for developers.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
